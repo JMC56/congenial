@@ -12,20 +12,20 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fonts -->
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" /> <!-- Arcade Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" /> <!-- Fuente Arcade -->
 
   <style>
     :root {
-      --primary: #FFD700; /* Yellow */
-      --secondary: #FF4500; /* Red */
-      --light: #000000; /* Black */
+      --primary: #FFD700; /* Amarillo */
+      --secondary: #FF4500; /* Rojo */
+      --light: #000000; /* Negro */
     }
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #FFD700, #FF4500); /* Yellow to Red */
+      background: linear-gradient(to right, #FFD700, #FF4500); /* Amarillo a Rojo */
       color: white;
       transition: background-color 0.5s ease;
       display: flex;
@@ -45,29 +45,29 @@
     header {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 1rem;
-      padding: 4rem 2rem; /* Increased padding */
+      padding: 4rem 2rem; /* Aumentar el padding */
       margin-bottom: 2rem;
       text-align: center;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      width: 100%; /* Full width */
+      width: 100%; /* Asegurarse de que ocupe todo el ancho */
     }
 
     h1 {
-      font-family: 'Press Start 2P', cursive; /* Arcade Font */
+      font-family: 'Press Start 2P', cursive; /* Cambiar a fuente Arcade */
       color: white;
-      font-size: 6rem; /* Increased font size */
+      font-size: 6rem; /* Aumentar el tamaño de la fuente */
       margin-bottom: 1rem;
     }
 
     .admin-link {
-      background-color: #FFA500; /* Orange */
+      background-color: #FFA500; /* Naranja */
       color: white;
-      padding: 10px 15px; /* Reduced padding */
+      padding: 10px 15px; /* Espaciado reducido */
       border-radius: 1rem;
       text-decoration: none;
-      font-size: 1rem; /* Smaller font size */
+      font-size: 1rem; /* Tamaño de la fuente más pequeño */
       transition: background-color 0.3s;
-      margin-top: 10px; /* Space between title and button */
+      margin-top: 10px; /* Espacio entre el título y el botón */
     }
 
     .admin-link:hover {
@@ -75,9 +75,6 @@
     }
 
     .tienda-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
       background-color: var(--primary);
       color: black;
       padding: 10px 20px;
@@ -90,7 +87,7 @@
 
     .tienda-button:hover {
       transform: scale(1.05);
-      background-color: #ffcc00; /* Lighter yellow */
+      background-color: #ffcc00; /* Un tono más claro de amarillo */
     }
 
     .modal {
@@ -98,14 +95,14 @@
     }
 
     .login-modal {
-      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+      background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
       border-radius: 1rem;
       padding: 2rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
 
     .modal h3 {
-      color: black; /* Black text for modal */
+      color: black; /* Cambiar a color negro */
     }
 
     input, textarea {
@@ -118,32 +115,32 @@
     input:focus, textarea:focus {
       border-color: var(--primary);
       outline: none;
-      background-color: rgba(255, 255, 0, 0.5); /* Highlight in yellow */
+      background-color: rgba(255, 255, 0, 0.5); /* Ilumina en amarillo */
     }
 
     .chisme-card {
       background: white;
       color: black;
       border-radius: 1rem;
-      padding: 1.5rem; /* Increased padding */
+      padding: 1.5rem;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: transform 0.2s, box-shadow 0.3s;
       border: 1px solid var(--primary);
-      margin: 1rem; /* Space between cards */
+      margin: 1rem; /* Espaciado entre tarjetas */
     }
 
     .chisme-card h3 {
       margin-bottom: 0.5rem;
-      font-size: 1.5rem; /* Increased font size */
+      font-size: 1.5rem; /* Aumentar el tamaño de la fuente */
     }
 
     .chisme-card p {
       margin: 0;
-      font-size: 1.2rem; /* Increased font size */
-      overflow: hidden; /* Hide overflow */
-      display: -webkit-box; /* For truncation */
-      -webkit-line-clamp: 2; /* Number of lines to show */
-      -webkit-box-orient: vertical; /* Vertical orientation */
+      font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+      overflow: hidden; /* Ocultar el desbordamiento */
+      display: -webkit-box; /* Para el truncamiento */
+      -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+      -webkit-box-orient: vertical; /* Orientación vertical */
     }
 
     .chisme-card:hover {
@@ -191,7 +188,7 @@
       color: black;
       padding: 10px 20px;
       border-radius: 1rem;
-      display: none; /* Hidden by default */
+      display: none; /* Ocultar por defecto */
       z-index: 1000;
     }
   </style>
@@ -200,7 +197,7 @@
 
   <header>
     <h1>Bienvenido al Universo de JJ</h1>
-    <a href="https://storejjchismes.vercel.app/" class="tienda-button">Tienda</a> <!-- Store button -->
+    <a href="https://storejjchismes.vercel.app/" class="tienda-button">Tienda</a> <!-- Botón de Tienda -->
     <a href="#" id="adminLink" class="admin-link">Acceso Admin</a>
   </header>
 
@@ -208,7 +205,7 @@
     <div id="chismesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </section>
 
-  <!-- Notification -->
+  <!-- Notificación -->
   <div id="notification" class="notification">Se ha registrado con éxito</div>
 
   <!-- Modal Login -->
@@ -221,14 +218,14 @@
         <div class="flex justify-between">
           <div class="space-x-2">
             <button type="button" id="closeLogin" class="bg-gray-300 text-black px-4 py-2 rounded-lg">Cancelar</button>
-            <button type="submit" class="bg-yellow-500 text-black px-4 py-2 rounded-lg">Entrar</button> <!-- Yellow Enter button -->
+            <button type="submit" class="bg-yellow-500 text-black px-4 py-2 rounded-lg">Entrar</button> <!-- Botón de Entrar en amarillo -->
           </div>
         </div>
       </form>
     </div>
   </div>
 
-  <!-- Modal for Adding Chisme -->
+  <!-- Modal para Agregar Chisme -->
   <div id="addChismeModal" class="modal fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
     <div class="add-chisme-modal max-w-md w-full mx-4 shadow-xl">
       <h3 class="text-2xl font-bold mb-6">Agregar Nuevo Chisme</h3>
@@ -245,7 +242,7 @@
     </div>
   </div>
 
-  <!-- Full Chisme Box -->
+  <!-- Caja de Chisme Completo -->
   <div id="fullChisme" class="full-chisme">
     <button id="closeFullChisme" class="bg-gray-300 text-black px-4 py-2 rounded-lg">Cerrar</button>
     <h3 id="fullChismeTitle" class="text-xl font-bold"></h3>
@@ -281,7 +278,7 @@
       { username: "admin10", password: "pass10" }
     ];
 
-    let currentUser  = null;
+    let currentUser = null;
 
     const elements = {
       adminLink: document.getElementById('adminLink'),
@@ -351,9 +348,9 @@
       const user = users.find(user => user.username === username && user.password === password);
 
       if (user) {
-        currentUser  = username;
+        currentUser = username;
         hideModal('loginModal');
-        showModal('addChismeModal'); // Show the modal to add chisme
+        showModal('addChismeModal'); // Mostrar el modal para agregar chisme
       } else {
         alert('Credenciales inválidas');
       }
@@ -376,11 +373,11 @@
       };
 
       db.ref('chismes').push(newChisme).then(() => {
-        loadChismes(); // Reload chismes after adding
-        hideModal('addChismeModal'); // Hide the add chisme modal
-        elements.chismeTitle.value = ''; // Clear title field
-        elements.chismeContent.value = ''; // Clear content field
-        showNotification('Se ha registrado con éxito'); // Show notification
+        loadChismes(); // Recargar chismes después de agregar
+        hideModal('addChismeModal'); // Ocultar el modal de agregar chisme
+        elements.chismeTitle.value = ''; // Limpiar el campo de título
+        elements.chismeContent.value = ''; // Limpiar el campo de contenido
+        showNotification('Se ha registrado con éxito'); // Mostrar notificación
       }).catch(error => {
         console.error('Error al agregar chisme:', error);
       });
@@ -391,7 +388,7 @@
       elements.notification.style.display = 'block';
       setTimeout(() => {
         elements.notification.style.display = 'none';
-      }, 3000); // Hide after 3 seconds
+      }, 3000); // Ocultar después de 3 segundos
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -411,7 +408,7 @@
     });
 
     window.onbeforeunload = function() {
-      return "¿Estás seguro de que deseas salir?"; // Confirmation message
+      return "¿Estás seguro de que deseas salir?";
     };
   </script>
 
